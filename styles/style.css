@@ -11,6 +11,9 @@ body {
 
 /* banner style */
 .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #594a4a;
     border-radius: 30px;
     padding: 30px 30px;
@@ -18,7 +21,7 @@ body {
 }
 
 .banner-detail {
-    display: flex;
+
     align-items: center;
 }
 
@@ -144,10 +147,10 @@ Media Queries
 @media only screen and (max-width:688px) {
 
     .banner-image img {
-        width: 100%
+        width: 100%;
     }
 
-    ;
+
 
     .container {
         width: 100%;
@@ -189,4 +192,47 @@ Media Queries
 
 /* tablet device */
 
-@media only screen and (min-width:689) and (max-width:988) {}
+@media only screen and (min-width:689) and (max-width:992) {
+
+
+    .banner-image img {
+        width: 100%;
+    }
+
+
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .banner {
+        background-color: #04AA6D;
+        flex-direction: column;
+
+    }
+
+
+
+    .main-container {
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgb(203, 224, 217);
+
+    }
+
+    .blogs {
+        margin: 10px;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .list-item {
+        flex-direction: column;
+
+    }
+
+    .social-icon {
+        flex-direction: column;
+    }
+}
