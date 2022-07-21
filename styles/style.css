@@ -143,6 +143,42 @@ footer {
 Media Queries
 ------------------- */
 
+/* tablet device */
+
+@media only screen and (min-width:689) and (max-width:992) {
+
+
+    .banner-image img {
+        width: 100%;
+    }
+
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .banner {
+        background-color: #04AA6D;
+        flex-direction: column;
+
+    }
+
+    .main-container {
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgb(203, 224, 217);
+
+    }
+
+    .blogs {
+        margin: 10px;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+    }
+}
+
 /* Mobile device */
 @media only screen and (max-width:688px) {
 
@@ -165,74 +201,31 @@ Media Queries
 
 
 
-    .main-container {
-        flex-direction: column;
-        grid-template-columns: repeat(1, 1fr);
-        background-color: rgb(203, 224, 217);
+}
 
-    }
-
-    .blogs {
-        margin: 10px;
-        flex-direction: column;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .list-item {
-        flex-direction: column;
-
-    }
-
-    .social-icon {
-        flex-direction: column;
-    }
-
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: rgb(203, 224, 217);
 
 }
 
-/* tablet device */
+.blogs {
+    margin: 10px;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+}
 
-@media only screen and (min-width:689) and (max-width:992) {
+.list-item {
+    flex-direction: column;
 
+}
 
-    .banner-image img {
-        width: 100%;
-    }
-
-
-
-    .container {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .banner {
-        background-color: #04AA6D;
-        flex-direction: column;
-
-    }
+.social-icon {
+    flex-direction: column;
+}
 
 
-
-    .main-container {
-        flex-direction: column;
-        grid-template-columns: repeat(2, 1fr);
-        background-color: rgb(203, 224, 217);
-
-    }
-
-    .blogs {
-        margin: 10px;
-        flex-direction: column;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .list-item {
-        flex-direction: column;
-
-    }
-
-    .social-icon {
-        flex-direction: column;
-    }
 }
