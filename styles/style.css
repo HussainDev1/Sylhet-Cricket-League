@@ -19,7 +19,6 @@ body {
 
 .banner-detail {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -29,8 +28,11 @@ body {
 
 }
 
-.banner-info a {
-    text-decoration: none;
+
+
+.btn span.icon {
+    width: 10px;
+    height: 40px;
 }
 
 .banner-image img {
@@ -122,3 +124,45 @@ footer {
     display: flex;
 
 }
+
+/* -------------------
+Media Queries
+------------------- */
+
+/* Mobile device */
+@media only screen and (max-width:688px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .banner {
+        background-color: #04AA6D;
+        flex-direction: column;
+
+    }
+
+
+
+    .main-container {
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: aquamarine;
+
+    }
+
+    .blog {
+        margin: 10px;
+    }
+
+    .list-item {
+        flex-direction: column;
+
+    }
+
+
+}
+
+/* tablet device */
+
+@media only screen and (min-width:689) and (max-width:988) {}
